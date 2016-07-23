@@ -31,7 +31,30 @@
             android:layout_height="wrap_content"
             android:src="@drawable/picture_of_me"
             android:adjustViewBounds="true"
-            android:layout_below="@id/my_name"/>
+            android:layout_below="@id/my_name"
+            android:id="@+id/my_picture"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/my_picture"
+            android:text="I'm a fun guy!!!!"
+            android:paddingTop="16dp"
+            android:id="@+id/summary"/>
+
+        <EditText
+            android:layout_width="256dp"
+            android:layout_height="128dp"
+            android:hint="Write me an email!"
+            android:layout_below="@id/summary"
+            android:id="@+id/my_edit_text"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="email me"
+            android:layout_below="@id/my_edit_text"
+            android:onClick="emailMessage"/>
 
     </RelativeLayout>
 
